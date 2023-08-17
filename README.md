@@ -1,11 +1,11 @@
-# Plugin for ZSH who display Nodejs info
+# Plugin for ZSH who display Python info
 
 Plugin creates a global variable with NodeJS information that can be displayed in prompts.
 
 ### Example
 
 ```sh
-PROMPT='$pr_node ...REST OF PROMPT'
+PROMPT='$pr_python ...REST OF PROMPT'
 ```
 
 This plugin made to be fast. It runs in background and update information only if need.
@@ -14,7 +14,7 @@ This plugin made to be fast. It runs in background and update information only i
 
 ### This plugin depends on [zsh-helpres](https://github.com/zpm-zsh/helpers) and [zsh-colors](https://github.com/zpm-zsh/colors)
 
-If you don't use [zpm](https://github.com/zpm-zsh/zpm), install it manually and activate it before this plugin. 
+If you don't use [zpm](https://github.com/zpm-zsh/zpm), install it manually and activate it before this plugin.
 If you use zpm you don’t need to do anything
 
 ### If you use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
@@ -22,15 +22,15 @@ If you use zpm you don’t need to do anything
 * Clone this repository into `~/.oh-my-zsh/custom/plugins`
 ```sh
 cd ~/.oh-my-zsh/custom/plugins
-git clone https://github.com/zpm-zsh/pr-node
+git clone https://github.com/zpm-zsh/pr-python
 ```
-* After that, add `pr-node` to your oh-my-zsh plugins array.
+* After that, add `pr-python` to your oh-my-zsh plugins array.
 
 ### If you use [Zgen](https://github.com/tarjoilija/zgen)
 
-1. Add `zgen load zpm-zsh/pr-node` to your `.zshrc` with your other plugin
+1. Add `zgen load zpm-zsh/pr-python` to your `.zshrc` with your other plugin
 2. run `zgen save`
 
 ### If you use my [ZPM](https://github.com/zpm-zsh/zpm)
 
-* Add `zpm load zpm-zsh/pr-node` into your `.zshrc`
+* Add `zpm load zpm-zsh/pr-python` into your `.zshrc`

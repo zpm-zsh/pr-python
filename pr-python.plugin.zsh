@@ -15,14 +15,12 @@ if (( $+commands[python] )); then
     pr_python=''
 
     if [[ -n "$VIRTUAL_ENV" ]]; then
-      pr_python=" %{${c[base3]}${c[bold]}%}(%{${c[reset]}%}"
+      pr_python=' '
 
       pyver=$(python --version)
       pyver=${pyver#'Python '}
 
       pr_python+="%{${c[blue]}${c[bold]}%}${PR_PYTHON_SYMBOL}%{${c[reset]}%} %{${c[blue]}${c[bold]}%}$pyver%{${c[reset]}%}"
-
-      pr_python+="%{${c[base3]}${c[bold]}%})%{${c[reset]}%}"
     fi
   }
 
